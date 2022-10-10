@@ -42,8 +42,9 @@ class Callback extends \Duitku\PosPay\Controller\AbstractActionController
          if ($responseCode !== Response::HTTP_OK) {
             $this->_logError(EpayPayment::METHOD_CODE, $id, $message);
             if (isset($order)) {
-                $order->addStatusHistoryComment($message);
-                $order->save();
+                $order->addCommentToStatusHistory($message);
+                // $order->save();
+                $this->saveOrder($order);
             }
         }
         $callBackResult = $this->_createCallbackResult($responseCode, $message, $id);
