@@ -14,9 +14,9 @@
  */
 
 namespace Duitku\PosPay\Helper;
-include_once('Duitku/DuitkuCore.php');
+// include_once('Duitku/DuitkuCore.php');
 use Duitku\PosPay\Helper\DuitkuConstants;
-use Duitku_PosPay_Core;
+use Duitku\PosPay\Helper\Duitku\Duitku_PosPay_Core;
 class Data extends \Magento\Framework\App\Helper\AbstractHelper
 {
     /**
