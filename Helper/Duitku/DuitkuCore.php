@@ -1,7 +1,5 @@
 <?php
-namespace Duitku\PosPay\Helper\Duitku;
-// include_once('ApiRequestor.php');
-use Duitku\PosPay\Helper\Duitku\Duitku_PosPay_ApiRequestor;
+include_once('ApiRequestor.php');
 class Duitku_PosPay_Core {
 
   public static function getRedirectionUrl($baseUrl, $params)

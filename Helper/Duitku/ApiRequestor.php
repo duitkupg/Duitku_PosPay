@@ -1,5 +1,4 @@
 <?php
-namespace Duitku\PosPay\Helper\Duitku;
 
 class Duitku_PosPay_ApiRequestor {
 
